@@ -1,0 +1,88 @@
+<section id="main-section">
+    <div id="sub-header">
+        <h2>Overview</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Conditional statements are blocks of code that execute when a certain condition is met. This condition is a boolean, which can be a variable, a function return, or an expression. There are 3 conditional statements: if, else, and switch.</p>
+    </div>
+
+    <div id="sub-header">
+        <h2>If-statements</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>If-statements are the basic conditional statement. They execute lines of code if a condition is met.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>let x = 10;</p>
+                <br>
+                <p>if (x === 10) {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("X is 10");</p>
+                <p>}</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Else-statements</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Else-statements execute lines of code if a condition in an if-statement is not met. They are put right after an if-statement.</p>
+        
+        <blockquote class="code-block">
+            <span>
+                <p>let x = 10;</p>
+                <br>
+                <p>if (x === 9) {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("X is 10");</p>
+                <p>}</p>
+                <p>else {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("X is not 10");</p>
+                <p>}</p>
+            </span>
+        </blockquote>
+
+        <p>Else-statements can be combined with an if-statement to form a else-if-statement, which is the same as putting an if-statement inside an else-statement.</p>
+        
+        <blockquote class="code-block">
+            <span>
+                <p>let x = 9;</p>
+                <br>
+                <p>if (x === 10) {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("X is 10");</p>
+                <p>}</p>
+                <p>else if (x === 9) {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("X is 9");</p>
+                <p>}</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Switch statements</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Switch statements take a variable and match it against specific values and executes code for the value that is matched; if a value is not specified, a default case is executed.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>let x = 9;</p>
+                <br>
+                <p>switch (x) {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;case 9:</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;console.log("X is 9");</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break; //The break is to stop the execution of other cases if this one is matched.</p>
+                <p>&emsp;&emsp;&emsp;&emsp;case 10:</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;console.log("X is 10");</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;</p>
+                <p>&emsp;&emsp;&emsp;&emsp;default: //Break is not needed for default since it is the last condition.</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;console.log("X is 10");</p>
+                <p>}</p>
+            </span>
+        </blockquote>
+    </div>
+</section>
