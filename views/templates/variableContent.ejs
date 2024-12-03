@@ -1,0 +1,81 @@
+<section id="main-section">
+    <div id="sub-header">
+        <h2>Overview</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Variables are names that hold some data. This data can either be:</p>
+    
+        <ul>
+            <li>a <em>number</em> (e.g. 100, 3.453, -35)</li>
+            <li>a <em>string</em> (a series of characters, e.g. "Hello"; either double quotes ("") or single quotes ('') can be used)</li>
+            <li>a <em>boolean</em> (either true or false)</li>
+            <li><em>null</em> (no value)</li>
+        </ul>
+    </div>
+
+    <div class="section-div">
+        <p>A variable decalaration consists of three parts: a keyword, a name, and a value (data). The 2 common keywords for variables are <em>let</em> and <em>const</em>. The <em>let</em> keyword allows the variable to change its value, whereas <em>const</em> does not allow the variable to change its value (i.e. turns the variable into a constant).</p>
+    </div>
+
+    <div class="section-div">
+        <p>Example of some decalarations are:</p>
+        
+        <blockquote class="code-block">
+            <span>
+                <p>let x = 23;</p>
+                <p>const name = "John Smith";</p>
+                <p>let isFunny = true;</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Objects</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Objects are special variables that hold multiple variables (called properties). Objects are used to group variables that are in the same context, such as having a name and an age for a person.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>let person = {name: "John", age: 20};</p>
+            </span>
+        </blockquote>
+
+        <p>Properties can be accessed by using a period on the object and putting the property after the period. Unlike normal variables, properties cannot use the <em>let</em> or <em>const</em> keywords, and thus are always mutable, even if the object itself is <em>const</em>.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>const person = {name: "John", age: 20};</p>
+                <p>person = {name: "Jane", age: 21}; //Not allowed</p>
+                <p>person.name = "Jane"; //Allowed</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Arrays</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Arrays are special variables that store a collection of values (called elements). They are similar to objects, but the values in an array have no specific names, but have an number (called an index) associated with them.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>let numbers = [1, 2, 3, 4, 5];</p>
+            </span>
+        </blockquote>
+
+        <p>Elements can be accessed by using square brackets next to the object with the element's index. The index of the first element is 0, the second element is 1, third element is 2, etc.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>let numbers = [1, 2, 3, 4, 5];</p>
+                <p>numbers[1] = 20; //Changes the value of the second element (at index 1) to 20.</p>
+            </span>
+        </blockquote>
+
+        <p>Similar to objects, the elements in an array can be reassigned, even if the array is constant.</p>
+    </div>
+</section>

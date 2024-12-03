@@ -8,7 +8,7 @@ h1 {
     font: bolder 5em;
 }
 
-header, nav {
+header, nav, section {
     display: block;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 #box {
-    max-width: 90%;
+    max-width: 75%;
     margin: .5em auto;
     display: flex;
     flex-direction: column;
@@ -63,4 +63,41 @@ body {
     background-color: #505050;
     padding: .5em;
     border-radius: 1em;
+}
+
+#main-section {
+    flex: 1;
+    padding: 1em;
+    margin: 5em auto;
+    border-radius: 2em;
+    border: 0.1em solid whitesmoke;
+}
+
+#sub-header {
+    margin: 0.5em auto;
+}
+
+.section-div {
+    margin-bottom: 2em;
+}
+
+.section-div ul {
+    margin-left: 2em;
+}
+
+.section-div ul li {
+    margin: 0.5em auto;
+}
+
+.code-block {
+    margin: 1em;
+    background-color: #101010;
+}
+
+.code-block span {
+    margin: 0.5em;
+}
+
+.code-block span p {
+    margin-left: 1em;
 }
