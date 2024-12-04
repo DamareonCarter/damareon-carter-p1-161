@@ -1,0 +1,6 @@
+The web server will be made with Express and use EJS as the template engine.
+
+The website will contain 5 pages: starting, variable, conditional, loop, and function.
+-Each page will have its own .ejs file that Express with turn into HTML; thes files will be in the views folder.
+-The will be a folder called routes, which will contain the .js files for the middleware; each will map a GET request to its respective .ejs file.
+-There will be a server.js which will contain the Express object, which will use all the route modules in the routes folder.
