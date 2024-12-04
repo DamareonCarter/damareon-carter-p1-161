@@ -1,0 +1,63 @@
+<section id="main-section">
+    <div id="sub-header">
+        <h2>Overview</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Functions are blocks of code that are executed when called. Functions can have special variables (called parameters) and/or a value (called the return value) given by the function call after the function is finished.</p>
+    </div>
+
+    <div id="sub-header">
+        <h2>Basic function</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>This is a function with no parameters or a return statement.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>function foo() {</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("Execute function foo");</p>
+                <p>}</p>
+                <br>
+                <p>foo(); //Calls/invokes the function</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Functions with parameters</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Parameters are essentially variables for the function. These variables will be assigned the value of what you pass in to the function call. There, is no virtually limit on the parameters a function can have.</p>
+        
+        <blockquote class="code-block">
+            <span>
+                <p>function foo(name) { //Any subsequent parameters will be to be separated by commas</p>
+                <p>&emsp;&emsp;&emsp;&emsp;console.log("Your name is " + name);</p>
+                <p>}</p>
+                <br>
+                <p>foo("John"); //This string will be assigned to the name parameter</p>
+            </span>
+        </blockquote>
+    </div>
+
+    <div id="sub-header">
+        <h2>Functions with a return statement</h2><hr>
+    </div>
+
+    <div class="section-div">
+        <p>Return statements give a value after the function is called. This value can be assigned to a variable, passed into another function, or used as-is.</p>
+
+        <blockquote class="code-block">
+            <span>
+                <p>function add(a, b) { </p>
+                <p>&emsp;&emsp;&emsp;&emsp;return a + b;</p>
+                <p>}</p>
+                <br>
+                <p>let sum = add(3, 5); //Sum will be assigned to the value 8</p>
+            </span>
+        </blockquote>
+    </div>
+</section>
